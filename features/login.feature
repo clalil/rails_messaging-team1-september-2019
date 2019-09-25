@@ -14,5 +14,10 @@ Scenario: Logging into my account
     When I fill in "Email" with "joe@doe.com"
     And I fill in "Password" with "password"
     And I click "Log in"
-    # Then Stop
     Then I should see "Hello, Joe"
+
+Scenario: Not entering any user data
+    When I fill in "Email" with ""
+    And I fill in "Password" with ""
+    And I click "Log in"
+    Then I should see "Invalid Email or password"
