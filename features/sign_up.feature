@@ -5,7 +5,7 @@ I would like to create an account
 
 Background:
 Given I visit the "welcome#index" page
-And I click "Sign up" button
+And I click "Sign up" link
 
 Scenario: Creating an account
 When I fill in "Name" with "Joe"
