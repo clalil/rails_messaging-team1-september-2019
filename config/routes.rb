@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   devise_for :users
   get 'welcome/index'
 
-  root 'welcome#index'
+  root controller: :welcome, action: :index
 
   # mailbox folder routes
   get "mailbox/inbox" => "mailbox#inbox", as: :mailbox_inbox
