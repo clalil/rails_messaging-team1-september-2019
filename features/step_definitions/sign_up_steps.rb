@@ -1,15 +1,12 @@
-Given("I visit the {string} page") do |string|
+Given("I visit the landing page") do
     visit root_path
   end
   
-  Given("I click {string} link") do |string|
-    expect(page).to have_content string
+  Given("I click {string}") do |string|
+    click_link_or_button string
   end
   
-  When("I fill in {string} with {string}") do |string, string2|
-    expect(page).to have_content string2
+  When("I fill in {string} with {string}") do |field, content|
+    fill_in field, with: content
   end
   
-  When("I click {string} button") do |string|
-    pending # Write code here that turns the phrase above into concrete actions
-  end
