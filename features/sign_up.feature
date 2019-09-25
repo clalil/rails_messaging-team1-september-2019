@@ -13,6 +13,6 @@ And I fill in "Email" with "joe@doe.com"
 And I fill in "Password" with "12345678"
 And I fill in "Password confirmation" with "12345678"
 And I click "Create"
-Then I should see "message" #unit tests
+Then I should see "Welcome! You have signed up successfully."
 
 
