@@ -1,12 +1,12 @@
 Feature: Login to Webmail
     As a user
-    In order to access my account 
-    I expect to login
+    In order to send secure messages
+    I would like to be able to login
 
 Background:
     Given the following user exist:
-    |name|email|password|
-    |Joe|joe@doe.com|password|
+    | name | email       | password |
+    | Joe  | joe@doe.com | password |
     And I visit the landing page
     And I click "Login"
 
