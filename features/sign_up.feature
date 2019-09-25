@@ -4,7 +4,7 @@ In order to send and receive mail
 I would like to create an account
 
 Background:
-Given I visit the "Craft Academy Mailboxer" page
+Given I visit the "welcome#index" page
 And I click "Sign up" button
 
 Scenario: Creating an account
