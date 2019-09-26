@@ -11,7 +11,3 @@ Given("following messages exists") do |table|
   end
 end
 
-Then("I should see {string} messages") do |expected_count|
-  count = @receiver.mailbox.inbox.count
-  expect(count).to eq expected_count.to_i
-end
