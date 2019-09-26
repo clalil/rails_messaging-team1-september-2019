@@ -1,7 +1,6 @@
 When("I am on the inbox page") do
     visit mailbox_inbox_path
   end
-    
   
   Given("I am logged in as {string}") do |name|
     @user = User.find_by(name: name)
@@ -17,7 +16,6 @@ When("I am on the inbox page") do
     logout
   end
   
-  
   Given("following messages exists") do |table|
     table.hashes.each do |email|
       sender = User.find_by(name: email[:sender])
@@ -25,7 +23,6 @@ When("I am on the inbox page") do
       sender.send_message(@receiver, email[:body], email[:subject])  
     end
   end
-
   
   Then("I should see {string} messages") do |expected_count|
     count = @receiver.mailbox.inbox.count

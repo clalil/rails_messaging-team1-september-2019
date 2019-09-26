@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
-root controller: :mailbox, action: :inbox
 
   devise_for :users
-  get 'welcome/index'
 
   root controller: :welcome, action: :index
 
