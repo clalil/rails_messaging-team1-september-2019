@@ -19,5 +19,6 @@ Given following users exists
     When I click "Compose" 
     And I select the "Recipients" of "Jenny"
     And I fill in "Subject" with "sbj"
-    And I fill in "Message" with "Hello"
+    And I fill in "Message[body]" with "Hello"
     And I click "Send Message"
+    And I see "message was successfully sent! "

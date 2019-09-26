@@ -31,7 +31,7 @@ When("I am on the inbox page") do
 end
 
 When("I select the {string} of {string}") do |recipient, name|
-  select name, from: recipients
+  select name, from: recipient
 end
 
 
