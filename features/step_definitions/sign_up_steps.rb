@@ -1,9 +1,9 @@
 Given("I visit the landing page") do
     visit root_path
   end
-  
-  When("I fill in {string} with {string}") do |field, content|
-    fill_in field, with: content
+
+  Given("I visit the signup page") do
+    visit new_user_registration_path
   end
   
   Then("I should see {string}") do |string|
