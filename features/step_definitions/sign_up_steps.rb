@@ -11,4 +11,3 @@ Given("I visit the landing page") do
       FactoryBot.create(:user, user)
     end
   end
-  
