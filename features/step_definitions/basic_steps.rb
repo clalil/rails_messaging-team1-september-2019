@@ -20,3 +20,7 @@ end
 When("I click {string}") do |element|
   click_on element
 end
+
+When("I should see messages") do
+  @receiver.mailbox.inbox
+end
