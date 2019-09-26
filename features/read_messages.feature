@@ -1,6 +1,6 @@
 Feature: Read mail in inbox
   As a user
-  In order to read mail
+  In order to read my mail
   I expect to view a thread of mail assorted by date and time
 
   Background:
