@@ -5,8 +5,8 @@ Feature: Login to Webmail
 
 Background:
     Given the following user exist:
-    | name | email       | password |
-    | Joe  | joe@doe.com | password |
+        | name | email       | password |
+        | Joe  | joe@doe.com | password |
     And I visit the landing page
     And I click "Login"
 
