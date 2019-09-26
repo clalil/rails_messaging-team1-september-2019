@@ -9,8 +9,8 @@ Background:
 Scenario: Creating an account
     When I fill in "Name" with "Joe"
     And I fill in "Email" with "joe@doe.com"
-    And I fill in "Password" with "12345678"
-    And I fill in "Password confirmation" with "12345678"
+    And I fill in "Password" with "password"
+    And I fill in "Password confirmation" with "password"
     And I click "Create"
     Then I should see "Welcome! You have signed up successfully."
 
@@ -30,7 +30,7 @@ Scenario: Entering incorrect name
     Then I should see "Name is too long (maximum is 10 characters)"
 
 Scenario: Entering incorrect password
-    And I fill in "Password" with "1234567"
-    And I fill in "Password confirmation" with "1234567"
+    And I fill in "Password" with "passwor"
+    And I fill in "Password confirmation" with "passwor"
     And I click "Create"
     Then I should see "Password is too short (minimum is 8 characters)"
