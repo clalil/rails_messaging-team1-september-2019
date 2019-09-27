@@ -18,5 +18,3 @@ Feature: Send email
     And I fill in "Message" with "Hello"
     And I click "Send Message"
     And I should see "Your message was successfully sent!"
-
-

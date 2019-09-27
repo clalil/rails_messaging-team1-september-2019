@@ -25,7 +25,6 @@ When("I should see messages") do
   @receiver.mailbox.inbox
 end
 
-
 When("I am on the inbox page") do
   visit mailbox_inbox_path
 end
@@ -33,15 +32,3 @@ end
 When("I select the {string} of {string}") do |recipient, name|
   select name, from: recipient
 end
-
-Then("stop") do
-  binding.pry
-end
-
-
-
-
-
-
-
-
