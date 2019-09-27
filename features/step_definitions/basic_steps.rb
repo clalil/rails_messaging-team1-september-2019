@@ -34,6 +34,11 @@ When("I select the {string} of {string}") do |recipient, name|
   select name, from: recipient
 end
 
+Then("stop") do
+  binding.pry
+end
+
+
 
 
 
