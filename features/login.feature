@@ -3,12 +3,12 @@ Feature: Login to Webmail
     In order to send secure messages
     I would like to be able to login
 
-    Background:
-        Given the following user exist:
-            | name | email       | password |
-            | Joe  | joe@doe.com | password |
-        And I visit the landing page
-        And I click "Login"
+Background:
+    Given the following user exist:
+        | name | email       | password |
+        | Joe  | joe@doe.com | password |
+    And I visit the landing page
+    And I click "Login"
 
     Scenario: Logging into my account
         When I fill in "Email" with "joe@doe.com"
