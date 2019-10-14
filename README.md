@@ -10,7 +10,7 @@
 **Back End:** Rails  
 **Testing frameworks:** Cucumber, RSpec  
 **Deployed at:** -  
-**Project Management Tool:** [Pivotal tracker for our team](#)
+**Project Management Tool:** [Pivotal tracker for our team](https://www.pivotaltracker.com/n/projects/2399291#)
 
 ## The code   
 This repository contains our team's solution to the Legacy Code Challenge; a web-based application that allows users to sign up, login, create, send and trash emails. This was a one week challenge using Ruby on Rails as well as the gems [Devise](https://github.com/plataformatec/devise) and Warden (for login and sign up functionality).        
